@@ -1,0 +1,1 @@
+update_pkgver=$(wget -q -O- https://github.com/peak3d/inputstream.adaptive/releases/ | grep -ie 'releases\/tag' | grep -m1 "$_codename" | sed 's,.*tag\/\([0-9a-z\.]*\).*,\1,')
